@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    background-image: url(songs/image.jpg);
+   
+    background-size: 1800px;
+    background-color: black;
+    cursor:default;
+}
+
+nav{
+ font-family: 'Ubuntu',sans-serif;
+
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background:linear-gradient(rgb(6, 72, 163),rgb(7, 130, 196));
+    color: antiquewhite;
+  
+
+    
+    
+}
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .song {
+    font-size: 0.9rem;
+  }
+
+  .aboutme {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav .brand {
+    font-size: 1.2rem;
+  }
+
+  
+
+  .bottom {
+    margin-top: 10px;
+    position: relative;
+    top: 800px;
+    
+  }
+}
+.icons{
+    position: relative;
+    left: 5px;
+}
+
+
+.brand img{
+    height:60px;
+    width: 70px;
+    background:linear-gradient(rgb(6, 72, 163),rgb(7, 130, 196));
+    background-size: cover;
+}
+.brand{
+    display: flex;
+    align-items: center;
+
+    font-weight: bolder;
+    font-size: 200%;
+    margin-left: 1px;
+     box-shadow: 3px 3px 3px black;
+       border-radius: 10%;
+
+}
+nav li{
+    margin-left: 30px;
+    background:linear-gradient(rgb(6, 72, 163),rgb(7, 130, 196));
+     box-shadow: 3px 3px 3px black;
+       border-radius: 10%;
+       cursor: pointer;
+}
+
+.container{
+   display: inline;
+    min-height: 75vh;
+    color: antiquewhite;
+    background-color: black;
+
+}
+.bottom{
+    position:fixed;
+    height:70px;
+ background:linear-gradient(20deg,rgb(6, 72, 163),rgb(7, 130, 196));
+bottom: 0;
+width: 100%;
+
+}
+#range{
+    width: 80vw;
+   
+    
+    position: relative;
+    top:1%;
+}
+.name{
+   text-transform: uppercase;
+}
+nav p{
+    margin-left: 1300px;
+     font-family: "Space Grotesk", sans-serif;
+     font-size: larger;
+     background:linear-gradient(rgb(6, 72, 163),rgb(7, 130, 196));
+      box-shadow: 3px 3px 13px black;
+        border-radius:5%;
+
+}
+.song{
+    color: blanchedalmond;
+    margin-top: 20px;
+    font-size: 30px;
+    cursor:pointer;
+    animation: text 1s ease-in-out infinite ;
+   background: transparent;
+  width: max-content;
+    
+
+    
+}
+
+.song:hover{
+    transform:scaleY(1.2);
+    transform: rotate(0.1deg);
+    transition: all 0.3s ease-in-out;
+    color: blue;
+    z-index: 4;
+    border: 1px solid rgb(19, 92, 201);
+}
+@keyframes text {
+    from{
+        margin-left: 0%;
+        color:linen;
+    }
+    to{
+        margin-left: 1px;
+        color: aqua;
+    }
+    
+}
+.rock2{
+    height: 400px;
+    width: 200px;
+    
+    position: absolute;
+    left: 1600px;
+    top: 100px;
+    background: transparent;
+    background-image: url(covers/pngimg.com\ -\ rock_music_PNG11.png);
+    background-size: cover;
+animation: move 0.01s ease-in-out  infinite ;
+transform:scale(1.2);
+cursor: none;
+  
+    
+}
+@keyframes move {
+    from{
+        background: blur(2px);
+        margin-right: 9px;
+    }
+    to{
+        background: blur(8px);
+        margin-left: 9px;
+
+    }
+    
+}
+.cover1{
+    height: 200px;
+    width: 200px;
+    border-radius:50% ;
+    position: absolute;
+    left: 1250px;
+    top: 460px;
+    background: transparent;
+    background-image: url(covers/1.webp);
+    background-size: cover;
+    filter: blur(0.3px);
+  
+     border: 3px solid rgb(253, 144, 34);
+    border-top-color:rgb(255, 255, 255);
+    border-bottom-color:rgb(63, 245, 124) ;
+
+transform:scale(1.2);
+cursor: none;
+animation: spin 5s linear infinite;
+  
+    
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); /* Start at 0 degrees */
+  }
+  to {
+    transform: rotate(360deg); /* Complete a full rotation */
+  }
+}
+
+.icons{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    position: absolute;
+    top: 12px;
+    gap: 30px;
+}
+.icon22{
+height: 40px ; width: 45px;background: transparent;background-image: url(covers/pause.webp);background-size: cover;
+}
+.icon2{height: 40px ; width: 35px;background: transparent;background-image: url(covers/play.png);background-size: cover;}
+
+.icon2:active{
+    transition: all 0.5s ease-in-out;
+}
+.icon22:active{
+    transition: all 0.5s ease-in-out;
+}
+
+.aboutme2{
+    height: 500px;
+    width: 500px;
+    border: 2px solid rgb(46, 95, 200);
+    position: absolute;
+    top: 80px;
+    left: 400px;
+    background-image:url(/amazon.html/spotify.html/covers/about.webp) ;
+    filter: blur(22);
+    background-size: cover;
+  text-shadow: 2px 2px 2px rgb(29, 29, 28);
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out ;
+    font-family: "Space Grotesk", sans-serif;
+     font-weight: bolder;
+     color: rgb(105, 232, 220);
+     
+}
+.aboutme{
+    height: 0px;
+    width: 0px;
+color: transparent;
+font-size: 0px;
+    z-index: -5;
+     
+}
+.cover2{
+    height: 200px;
+    width: 200px;
+    border-radius:50% ;
+    position: absolute;
+    left: 1250px;
+    top: 460px;
+    background: transparent;
+    background-image: url(covers/2.webp);
+    background-size: cover;
+    filter: blur(0.3px);
+    border: 3px solid rgb(81, 154, 165);
+     border: 3px solid rgb(253, 144, 34);
+    border-top-color:rgb(255, 255, 255);
+    border-bottom-color:rgb(63, 245, 124) ;
+
+transform:scale(1.2);
+cursor: none;
+animation: spin 5s linear infinite;
+  
+    
+}
+.cover3{
+    height: 200px;
+    width: 200px;
+    border-radius:50% ;
+    position: absolute;
+    left: 1250px;
+    top: 460px;
+    background: transparent;
+    background-image: url(covers/3.jpg);
+    background-size: cover;
+    filter: blur(0.3px);
+    border: 3px solid rgb(81, 154, 165);
+    
+ border: 3px solid rgb(253, 144, 34);
+    border-top-color:rgb(255, 255, 255);
+    border-bottom-color:rgb(63, 245, 124) ;
+transform:scale(1.2);
+cursor: none;
+animation: spin 5s linear infinite;
+  
+    
+}
+.cover4{
+    height: 200px;
+    width: 200px;
+    border-radius:50% ;
+    position: absolute;
+    left: 1250px;
+    top: 460px;
+    background: transparent;
+    background-image: url(covers/4.webp);
+    background-size: cover;
+    filter: blur(0.3px);
+    border: 3px solid rgb(81, 154, 165);
+     border: 3px solid rgb(253, 144, 34);
+    border-top-color:rgb(255, 255, 255);
+    border-bottom-color:rgb(63, 245, 124) ;
+
+transform:scale(1.2);
+cursor: none;
+animation: spin 5s linear infinite;
+  
+    
+}
+.cover5{
+    height: 200px;
+    width: 200px;
+    border-radius:50% ;
+    position: absolute;
+    left: 1250px;
+    top: 460px;
+    background: transparent;
+    background-image: url(covers/5.webp);
+    background-size: cover;
+    filter: blur(0.3px);
+    border: 3px solid rgb(253, 144, 34);
+    border-top-color:rgb(255, 255, 255);
+    border-bottom-color:rgb(63, 245, 124) ;
+    
+
+transform:scale(1.2);
+cursor: none;
+animation: spin 5s linear infinite;
+  
+    
+}
+.cover6{
+    height: 200px;
+    width: 200px;
+    border-radius:50% ;
+    position: absolute;
+    left: 1250px;
+    top: 460px;
+    background: transparent;
+    background-image: url(covers/6.jpeg);
+    background-size: cover;
+    filter: blur(0.3px);
+    border: 3px solid rgb(81, 154, 165);
+    
+
+transform:scale(1.2);
+cursor: none;
+animation: spin 5s linear infinite;
+  
+    
+}
+.cover8{
+    height: 200px;
+    width: 200px;
+    border-radius:50% ;
+    position: absolute;
+    left: 1250px;
+    top: 460px;
+    background: transparent;
+    background-image: url(covers/8.jpg);
+    background-size: cover;
+    filter: blur(0.3px);
+    border: 3px solid rgb(81, 154, 165);
+    
+
+transform:scale(1.2);
+cursor: none;
+animation: spin 5s linear infinite;
+  
+    
+}
+
+.cover9{
+    height: 200px;
+    width: 200px;
+    border-radius:50% ;
+    position: absolute;
+    left: 1250px;
+    top: 460px;
+    background: transparent;
+    background-image: url(covers/9.jpg);
+    background-size: cover;
+    filter: blur(0.3px);
+    border: 3px solid rgb(81, 154, 165);
+    
+
+transform:scale(1.2);
+cursor: none;
+animation: spin 5s linear infinite;
+  
+    
+}
+
+.cover0{
+    height: 200px;
+    width: 200px;
+    border-radius:50% ;
+    position: absolute;
+    left: 1250px;
+    top: 460px;
+    background: transparent;
+    background-image: url(covers/back1.webp);
+    background-size: cover;
+    filter: blur(0.3px);
+    border: 3px solid rgb(81, 154, 165);
+    
+
+transform:scale(1.2);
+cursor: none;
+animation: spin 5s linear infinite;
+  
+    
+}
+
