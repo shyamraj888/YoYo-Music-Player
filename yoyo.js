@@ -1,6 +1,6 @@
 console.log('Welcome to YoYo Music PLayer, Get the true feel/! ')
 var Sogn=0;
-let audioElement= new Audio(`/https://drive.google.com/drive/folders/1P_tJKuRF5xpqKhfAtiyn97SyHFEN6bdI?usp=drive_link/${Sogn}.mp3`);
+let audioElement= new Audio(`https://drive.google.com/drive/folders/1P_tJKuRF5xpqKhfAtiyn97SyHFEN6bdI?usp=drive_link/${Sogn}.mp3`);
 let cover = document.querySelector('.cover');
 let masterPlay = document.querySelector('.icon2');
 let myProgress = document.getElementById('range');
@@ -347,3 +347,4 @@ cover.classList.remove(`cover${cov1}`);
 }
 
 )
+
