@@ -414,7 +414,7 @@ animation: spin 5s linear infinite;
     
 }
 
-.cover0{
+.cover10{
     height: 200px;
     width: 200px;
     border-radius:50% ;
@@ -422,7 +422,7 @@ animation: spin 5s linear infinite;
     left: 1250px;
     top: 460px;
     background: transparent;
-    background-image: url(covers/back1.webp);
+    background-image: url(covers/10.png);
     background-size: cover;
     filter: blur(0.3px);
     border: 3px solid rgb(81, 154, 165);
@@ -434,4 +434,5 @@ animation: spin 5s linear infinite;
   
     
 }
+
 
