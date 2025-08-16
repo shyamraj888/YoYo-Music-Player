@@ -62,8 +62,8 @@ let songList = [
 {song:'Now Playing--Desi Kalakar Full Song Mp3',file:`songs/4.mp3`},
 {song:'Now Playing--Glassy/- Full Song Mp3',file:`songs/5.mp3`},
 {song:'Now Playing-Millionaire Mp3',file:`songs/6.mp3`},
-{song:'Now Playing-Dheeme Dheeme.Mp3',file:`songs/8.mp3`},
-{song:'Now Playing-One bottle Down Mp3',file:`songs/9mp3`},
+{song:'Now Playing-Dheere Dheere.Mp3',file:`songs/8.mp3`},
+{song:'Now Playing-One bottle Down Mp3',file:`songs/.9mp3`},
 {song:'Now Playing-Love Dose by honey singh Mp3',file:`songs/10.mp3`},
 
 ]
@@ -299,7 +299,7 @@ document.getElementById('eight').addEventListener('click',() =>{
      masterPlay.classList.remove('icon2');
     masterPlay.classList.add('icon22')
      audioElement.play();
-      Cplaying.innerHTML=songList[Sogn].song;
+      Cplaying.innerHTML=songList[7].song;
      
     
 
@@ -317,7 +317,7 @@ document.getElementById('nine').addEventListener('click',() =>{
      masterPlay.classList.remove('icon2');
     masterPlay.classList.add('icon22')
      audioElement.play();
-      Cplaying.innerHTML=songList[Sogn].song;
+      Cplaying.innerHTML=songList[8].song;
      
     
 
@@ -335,7 +335,7 @@ document.getElementById('ten').addEventListener('click',() =>{
      masterPlay.classList.remove('icon2');
     masterPlay.classList.add('icon22')
      audioElement.play();
-      Cplaying.innerHTML=songList[Sogn].song;
+      Cplaying.innerHTML=songList[9].song;
      
     
 
@@ -345,4 +345,5 @@ cover.classList.remove(`cover${cov1}`);
     cover.classList.add(`cover0`);
     cov1=Sogn;
 }
+
 )
