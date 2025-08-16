@@ -342,8 +342,9 @@ document.getElementById('ten').addEventListener('click',() =>{
  gif.classList.remove('rock');
     gif.classList.add('rock2');
 cover.classList.remove(`cover${cov1}`);
-    cover.classList.add(`cover0`);
+    cover.classList.add(`cover10`);
     cov1=Sogn;
 }
 
 )
+
